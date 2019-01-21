@@ -1,7 +1,5 @@
 from setuptools import setup, find_packages
-from setuptools.command.test import test as TestCommand
 from medacy_dataset_end import __version__, __authors__
-import sys
 
 packages = find_packages()
 
@@ -9,35 +7,18 @@ def readme():
     with open('README.md') as f:
         return f.read()
 
-class PyTest(TestCommand):
-    """
-    Custom Test Configuration Class
-    Read here for details: https://docs.pytest.org/en/latest/goodpractices.html
-    """
-
-    def initialize_options(self):
-        TestCommand.initialize_options(self)
-        self.pytest_args = ""
-
-    def run_tests(self):
-        import shlex
-        # import here, cause outside the eggs aren't loaded
-        import pytest
-
-        errno = pytest.main(shlex.split(self.pytest_args))
-        sys.exit(errno)
 
 setup(
-    name='medacy_dataset_end',
+    name='medacy_dataset_template', #the name of the python package, prefix with medacy_dataset
     version=__version__,
     license='GNU GENERAL PUBLIC LICENSE',
-    description='medaCy compatible version of the Engineered Nanomedicine Database',
+    description='A template for medaCy compatible datasets', #describe the package
     long_description=readme(),
     packages=packages,
-    url='https://github.com/NanoNLP/medaCy_dataset_end',
+    url='https://github.com/NLPatVCU/medaCy_dataset_template',
     author=__authors__,
     author_email='contact@andriymulyar.com',
-    keywords='natural-language-processing medical-natural-language-processing machine-learning nlp-library metamap',
+    keywords='dataset, medacy-dataset, medacy, nlp, medical-nlp',
     classifiers=[
         '( Status :: 4 - Beta',
         'License :: OSI Approved :: GNU General Public License (GPL)',
@@ -47,10 +28,8 @@ setup(
         'Intended Audience :: Science/Research'
     ],
     install_requires=[
-        'medacy>=0.0.4',
+        'medacy>=0.0.7',
     ],
-    tests_require=["pytest"],
-    cmdclass={"pytest": PyTest},
     include_package_data=True,
     zip_safe=False
 

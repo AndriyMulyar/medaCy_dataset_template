@@ -1,7 +1,7 @@
 from pkg_resources import resource_listdir, resource_string, resource_filename
 from medacy.data import Dataset
 
-package_name = "medacy_dataset_template"
+package_name = __name__
 
 def load():
     """
