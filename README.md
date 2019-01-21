@@ -12,12 +12,12 @@ Short dataset description.
 Describe the dataset in detail and provide relevant links to more information. What domain does it come from? Examples include links to organizers, interesting projects that utilize the dataset, etc.
 
 ## Annotations
-Discuss and give examples of the type of information this dataset captures
-in it's annotations. Does it solely contain entities? Relations?
-
 | Entities | Relations |
 | :-------: | :----------------: |
-| :heavy_check_mark: | :heavy_multiplication_x: | 
+| :heavy_check_mark: | :heavy_multiplication_x: |
+
+Discuss and give examples of the type of information this dataset captures
+in it's annotations. Does it solely contain entities? Relations?
 
 
 # Data Source
