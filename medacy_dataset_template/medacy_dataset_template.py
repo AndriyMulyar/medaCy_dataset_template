@@ -5,7 +5,7 @@ package_name = __name__
 
 def load():
     """
-    Loads a medaCy compatible Dataset.
+    Loads a medaCy compatible Dataset comprised of training and evaluation sets with meta-data.
     :return: Two medaCy Dataset objects corresponding to training and evaluation data respectively, meta_data.
     """
 
@@ -26,7 +26,11 @@ def get_evaluation_dataset():
     """
     Leave the evaluation folder empty if no evaluation data is provided.
 
-    :return: a medaCy Dataset object containing this Dataset's designated training data.
+    :return: a medaCy Dataset object containing this Dataset's designated evaluation data.
     """
+    # if evaluation is empty return None.
+    if not resource_listdir(package_name, 'data/evaluation'):
+        return None
+
     return Dataset(resource_filename(package_name, 'data/evaluation'))
 
