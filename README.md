@@ -1,19 +1,25 @@
-# Template for Creating a MedaCy Compatible Datasets
+# Template for Creating a MedaCy Compatible Dataset
 
-Short description of dataset.
+Short dataset description.
 
 # Information
-Describe the dataset in detail and provide relevant links to information. Examples links to oranizers, interesting projects that utilize
+
+
+| Dataset | Source | Domain | Num. Training Documents | Num. Evaluation Documents|
+| :-------: | :----------------: |:-------------:| :----: | :----: |
+|Official Dataset Name| Dataset source | Dataset Domain | 1 | 1 |
+
+Describe the dataset in detail and provide relevant links to information. What domain does it come from? Examples include links to organizers, interesting projects that utilize
  the dataset, etc.
 
-| Dataset | Source | Annotations | Unique Documents |
-| :-------: | :----------------: |:-------------:| :----:
-|Official Dataset Name| The source the dataset comes from | REPLACE_ME Entities | REPLACE_ME documents|
-
-
-## Dataset Annotations
+## Annotations
 Discuss and give examples of the type of information this dataset captures
 in it's annotations. Does it solely contain entities? Relations?
+
+| Entities | Relations |
+| :-------: | :----------------: |
+| :heavy_check_mark: | :heavy_multiplication_x:
+
 
 # Data Source
 Long description of data source
@@ -25,6 +31,6 @@ Provide a citation for any relevant literature that users can cite or reference.
 
 Package Maintainers
 ===================
-The individuals / organization that maintains this copy of the dataset. Include links
+The individuals / organization that maintain this copy of the dataset. Include links
 and information about the best ways they can be reached.
 

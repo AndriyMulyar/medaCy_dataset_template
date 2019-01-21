@@ -4,5 +4,5 @@ from .medacy_dataset_template import load
 #This insures everyone is working with the same data.
 __version__ = '1.0.0'
 
-#Who authored this package (not the dataset itself).
+# Who authored this package (not the dataset itself).
 __authors__ = "Andriy Mulyar and Bridget T. McInnes"
