@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from medacy_dataset_end import __version__, __authors__
+from medacy_dataset_template import __version__, __authors__
 
 packages = find_packages()
 
