@@ -28,7 +28,6 @@ setup(
         'Intended Audience :: Science/Research'
     ],
     install_requires=[
-        'medacy>=0.0.7',
     ],
     include_package_data=True,
     zip_safe=False
